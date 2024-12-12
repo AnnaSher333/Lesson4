@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class Account implements Serializable {
+public class Account{
     private int CardNumber = 333;
     private double balance;
     private int[] pin = {1, 2 ,3 ,4};

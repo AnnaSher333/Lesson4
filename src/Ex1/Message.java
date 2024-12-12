@@ -2,21 +2,24 @@ package Ex1;
 
 public class Message {
     public void pin(){System.out.println("Введите пин-код");}
+    public void pinIncorrect(){System.out.println("Пин-код неверный. Повторите попытку ввода");}
     public void pinErrorFirst() {
         System.out.println("Некорректный ввод! Каждый символ пин-кода должен быть цифрой от 0 до 9. \nВведите одну цифру.");
     }
     public void pinErrorSecond(){
-        System.out.println("Вы 3 раза ввели некорректный pin.\nАккаунт заблокирован.\nПовторный ввод pin возможен через 10 секунд.");}
-    public String pinIncorrectEx(){
-        return  "Некорректный пин-код!\nПин ДОЛЖЕН состоять из 4 цифр.\nПин НЕ должен сожердать символы и буквы.\nПопробуйте задать пин повторно.";}
+        System.out.println("Вы 3 раза ввели некорректный pin." +
+                "\nАккаунт заблокирован.\nПовторный ввод pin возможен через 10 секунд.");}
     public void serverConnect(){
         System.out.println("Соединение с сервером прошло успешно!");
     }
     public String serverError(){
         return  "Сервер не найден или не отвечает. Перезагрузите терминал.";
     }
-    public void lock(int second){
-        System.out.println("Блокировка завершится через: " + second + " секунд");
+    public String lock(int second){
+        return "Блокировка завершится через: " + second + " сек.";
+    }
+    public void unlock(){
+        System.out.println("Блокировка завершена! Повторите попытку введа пин-кода.");
     }
     public void sumMastBe(){
         System.out.println("Сумма должна быть кратна 100 руб.\nВведите сумму кратную 100.");

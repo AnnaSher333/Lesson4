@@ -1,4 +1,4 @@
-package Ex1;
+package Ex1.Exception;
 
 public class IncorrectPinException extends Exception {
     public IncorrectPinException(String description) {

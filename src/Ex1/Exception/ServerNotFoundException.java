@@ -1,4 +1,4 @@
-package Ex1;
+package Ex1.Exception;
 
 public class ServerNotFoundException extends Exception{
     public ServerNotFoundException(String description){

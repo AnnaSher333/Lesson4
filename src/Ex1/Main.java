@@ -1,9 +1,8 @@
 package Ex1;
 
+import Ex1.Exception.IncorrectPinException;
+
 import java.io.*;
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

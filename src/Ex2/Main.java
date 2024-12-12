@@ -8,10 +8,12 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите url: ");
         Content content = new Content();
-        try {
-            content.readContent(String.valueOf(input.nextLine()));
-        } catch (URISyntaxException e) {
-            System.out.println("Неверный url");;
+        while (content.isRun()) {
+            try {
+                content.readContent(String.valueOf(input.nextLine()));
+            } catch (URISyntaxException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 
